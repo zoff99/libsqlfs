@@ -3640,8 +3640,6 @@ int sqlfs_init(const char *db_file_name)
 */
 #endif
 
-    xxx;
-
     if (db_file_name)
         strncpy(default_db_file, db_file_name, sizeof(default_db_file));
     pthread_key_create(&pthread_key, sqlfs_t_finalize);
